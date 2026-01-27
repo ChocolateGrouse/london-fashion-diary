@@ -1,0 +1,7 @@
+# Netlify redirects for clean URLs
+# This allows /week/week-1 to work alongside /week.html?week=week-1
+
+/week/:slug    /week.html?week=:slug    200
+
+# Redirect www to non-www (optional - uncomment if needed)
+# https://www.johnfashon.com/*    https://johnfashon.com/:splat    301

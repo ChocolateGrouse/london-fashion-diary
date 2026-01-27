@@ -1,0 +1,173 @@
+{
+  "site": {
+    "name": "John Fashion",
+    "author": "John Stanley",
+    "tagline": "14 Weeks of Style in London",
+    "domain": "johnfashon.com"
+  },
+  "route": {
+    "busColor": "#CE1126",
+    "pathColor": "#1a1a1a",
+    "landmarks": ["big-ben", "tower-bridge", "london-eye", "st-pauls"]
+  },
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "slug": "week-1",
+      "status": "draft",
+      "stopName": "Stop 1",
+      "title": "Week 1",
+      "dateDisplay": "January 13-19, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 2,
+      "slug": "week-2",
+      "status": "draft",
+      "stopName": "Stop 2",
+      "title": "Week 2",
+      "dateDisplay": "January 20-26, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 3,
+      "slug": "week-3",
+      "status": "draft",
+      "stopName": "Stop 3",
+      "title": "Week 3",
+      "dateDisplay": "January 27 - February 2, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 4,
+      "slug": "week-4",
+      "status": "draft",
+      "stopName": "Stop 4",
+      "title": "Week 4",
+      "dateDisplay": "February 3-9, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 5,
+      "slug": "week-5",
+      "status": "draft",
+      "stopName": "Stop 5",
+      "title": "Week 5",
+      "dateDisplay": "February 10-16, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 6,
+      "slug": "week-6",
+      "status": "draft",
+      "stopName": "Stop 6",
+      "title": "Week 6",
+      "dateDisplay": "February 17-23, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 7,
+      "slug": "week-7",
+      "status": "draft",
+      "stopName": "Stop 7",
+      "title": "Week 7",
+      "dateDisplay": "February 24 - March 2, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 8,
+      "slug": "week-8",
+      "status": "draft",
+      "stopName": "Stop 8",
+      "title": "Week 8",
+      "dateDisplay": "March 3-9, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 9,
+      "slug": "week-9",
+      "status": "draft",
+      "stopName": "Stop 9",
+      "title": "Week 9",
+      "dateDisplay": "March 10-16, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 10,
+      "slug": "week-10",
+      "status": "draft",
+      "stopName": "Stop 10",
+      "title": "Week 10",
+      "dateDisplay": "March 17-23, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 11,
+      "slug": "week-11",
+      "status": "draft",
+      "stopName": "Stop 11",
+      "title": "Week 11",
+      "dateDisplay": "March 24-30, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 12,
+      "slug": "week-12",
+      "status": "draft",
+      "stopName": "Stop 12",
+      "title": "Week 12",
+      "dateDisplay": "March 31 - April 6, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 13,
+      "slug": "week-13",
+      "status": "draft",
+      "stopName": "Stop 13",
+      "title": "Week 13",
+      "dateDisplay": "April 7-13, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    },
+    {
+      "weekNumber": 14,
+      "slug": "week-14",
+      "status": "draft",
+      "stopName": "Stop 14",
+      "title": "Week 14",
+      "dateDisplay": "April 14-20, 2026",
+      "essay": null,
+      "featuredImage": null,
+      "images": []
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-01-27",
+    "version": "1.0"
+  }
+}
