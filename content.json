@@ -68,12 +68,50 @@
     {
       "weekNumber": 2,
       "slug": "week-2",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 2",
-      "title": "Week 2",
+      "title": "Dirty Looks at the Barbican",
       "dateDisplay": "January 20-26, 2026",
-      "essay": null,
-      "featuredImage": null,
+      "featuredImage": {
+        "src": "images/week-2/barbican_photo_9.jpg",
+        "alt": "White draped goddess dress with gold sun brooch by Di Petsa"
+      },
+      "sections": [
+        {
+          "text": "My first impression of the Barbican was the intense brutalist architecture. I tend to love this style. I watched the brutalists when it came out in theaters, and it sparked a deep respect for its origins as an architectural style. I think that brutalist architecture perfectly exemplifies what the dirty looks exhibit. A complete disregard for shame, and an admiration for beauty in the natural messiness of the world.",
+          "images": [
+            { "src": "images/week-2/barbican_photo_3.jpg", "alt": "Barbican brutalist architecture exterior" },
+            { "src": "images/week-2/barbican_photo_4.jpg", "alt": "Barbican concrete walkway and pillars" }
+          ]
+        },
+        {
+          "heading": "Dimitra Petsa",
+          "text": "When prompted to find a specific designer I resonated with, I quickly found myself in the Leaky Bodies section. What drew me in was the video that was playing in efforts to curate the room titled \u201cDirty Girls.\u201d Interestingly, I had come across this video previously. It was posted 12 years ago on YouTube, and when I watched it for the first time, I remember being struck by the bold, unbothered nature of the video\u2019s subjects. The designer in this section of the exhibit that I resonated with the most, and whom I felt connected to the \u201cDirty Girls\u201d video the most, was Dimitra Petsa. Famous for her \u201cWetlook\u201d designs, Di Petsa embodies attitudes such as confidence and self-worth. Her works vehemently reject shame regarding the female body, and I really enjoyed the works she had on display.",
+          "images": [
+            { "src": "images/week-2/barbican_photo_1.jpg", "alt": "Exhibit mannequins displaying Di Petsa designs" },
+            { "src": "images/week-2/barbican_photo_2.jpg", "alt": "White draped gown on display" }
+          ]
+        },
+        {
+          "text": "The pieces on display were a wetlook design, bloodied underwear, and pee-soaked pants. I found them incredibly compelling, and they stopped me in my tracks, not only because of the sharp, bold nature of the display, but also because of the connection they had with the video \u201cDirty Girls.\u201d",
+          "images": [
+            { "src": "images/week-2/barbican_photo_9.jpg", "alt": "White draped goddess dress with gold sun brooch" },
+            { "src": "images/week-2/barbican_photo_7.jpg", "alt": "Sheer top with pee-stain trousers" },
+            { "src": "images/week-2/barbican_photo_8.jpg", "alt": "Blue corset with bloodied underwear" }
+          ]
+        },
+        {
+          "text": "The \u201cDirty Girls\u201d express their creativity and individuality through their dirty garments, and as a result, they feel more confident because they are living the way they want to live. I observed that Di Petsa does the same with her garments. Her works are meant to embolden the wearer while allowing an easy disregard for anything that does not agree with their boldness.",
+          "images": [
+            { "src": "images/week-2/barbican_photo_5.jpg", "alt": "Fashion sketch of Di Petsa designs" },
+            { "src": "images/week-2/barbican_photo_6.jpg", "alt": "Sketching alongside the exhibit mannequins" }
+          ]
+        },
+        {
+          "text": "Overall, I really enjoyed the Barbican. It was bold, and the designs did not invite judgment, only observation. I think that the type of fashion shown in the Dirty Looks exhibit is perfect for someone looking to learn more about fashion. As someone who knows little about high fashion, I took away many valuable insights regarding the different styles and creativity that go into the looks presented.",
+          "images": []
+        }
+      ],
       "images": []
     },
     {
@@ -210,7 +248,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-01-27",
+    "lastUpdated": "2026-01-28",
     "version": "1.0"
   }
 }
