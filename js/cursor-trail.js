@@ -1,6 +1,7 @@
 /**
  * Cursor Trail - Ink Drop Effect
- * Creates an elegant trail of fading dots that follow the cursor
+ * Creates an elegant trail of fading dots that follow the cursor,
+ * adapting color to contrast with the current background.
  */
 (function() {
   'use strict';
@@ -11,104 +12,154 @@
   }
 
   // Configuration
-  const config = {
-    throttleMs: 50,           // Time between dot spawns
-    minDistance: 10,          // Minimum cursor movement to spawn dot
-    dotSizeMin: 6,            // Minimum dot size (px)
-    dotSizeMax: 10,           // Maximum dot size (px)
-    opacityMin: 0.3,          // Minimum opacity
-    opacityMax: 0.6,          // Maximum opacity
-    animationDuration: 800,   // Fade duration (ms)
-    maxDots: 30,              // Maximum dots on screen
-    offsetRange: 4            // Random offset range (px)
+  var config = {
+    throttleMs: 50,
+    minDistance: 10,
+    dotSizeMin: 6,
+    dotSizeMax: 10,
+    opacityMin: 0.3,
+    opacityMax: 0.6,
+    animationDuration: 800,
+    maxDots: 30,
+    offsetRange: 4
+  };
+
+  // Color palettes for light vs dark backgrounds
+  var palettes = {
+    light: [
+      '#722F37',  // Burgundy
+      '#722F37',  // Burgundy (weighted)
+      '#1a1a1a'   // Charcoal
+    ],
+    dark: [
+      '#f8f5f0',  // Cream
+      '#f8f5f0',  // Cream (weighted)
+      '#c9a227'   // Gold accent
+    ]
   };
 
   // State
-  let lastSpawnTime = 0;
-  let lastX = 0;
-  let lastY = 0;
-  let dots = [];
-  let animationFrameId = null;
+  var lastSpawnTime = 0;
+  var lastX = 0;
+  var lastY = 0;
+  var dots = [];
+  var cachedIsDark = false;
+  var cacheTime = 0;
+  var CACHE_TTL = 100; // Re-check background every 100ms
 
-  // Color palette (burgundy variations)
-  const colors = [
-    '#722F37',  // Burgundy (primary)
-    '#722F37',  // Burgundy (weighted)
-    '#1a1a1a'   // Charcoal (accent)
-  ];
-
-  /**
-   * Calculate distance between two points
-   */
   function getDistance(x1, y1, x2, y2) {
-    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
   }
 
-  /**
-   * Get random value in range
-   */
   function random(min, max) {
     return Math.random() * (max - min) + min;
   }
 
   /**
-   * Create a cursor dot element
+   * Parse a CSS color string into {r, g, b, a}.
+   * Handles rgb(), rgba(), and transparent.
    */
+  function parseColor(str) {
+    if (!str || str === 'transparent' || str === 'rgba(0, 0, 0, 0)') {
+      return null;
+    }
+    var match = str.match(/rgba?\(\s*(\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\s*\)/);
+    if (match) {
+      var a = match[4] !== undefined ? parseFloat(match[4]) : 1;
+      if (a < 0.1) return null; // Treat near-transparent as transparent
+      return { r: parseInt(match[1]), g: parseInt(match[2]), b: parseInt(match[3]) };
+    }
+    return null;
+  }
+
+  /**
+   * Determine relative luminance (0 = black, 1 = white)
+   */
+  function getLuminance(r, g, b) {
+    return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  }
+
+  /**
+   * Walk up the DOM from the element at the cursor position
+   * to find the effective background color and determine if it's dark.
+   */
+  function isDarkBackground(x, y) {
+    var el = document.elementFromPoint(x, y);
+    if (!el) return false;
+
+    // Walk up the tree looking for a non-transparent background
+    var current = el;
+    while (current && current !== document.documentElement) {
+      // Skip our own cursor dots
+      if (current.classList && current.classList.contains('cursor-dot')) {
+        current = current.parentElement;
+        continue;
+      }
+      var bg = getComputedStyle(current).backgroundColor;
+      var color = parseColor(bg);
+      if (color) {
+        return getLuminance(color.r, color.g, color.b) < 0.45;
+      }
+      current = current.parentElement;
+    }
+
+    // Fallback: check body/html
+    var bodyBg = getComputedStyle(document.body).backgroundColor;
+    var bodyColor = parseColor(bodyBg);
+    if (bodyColor) {
+      return getLuminance(bodyColor.r, bodyColor.g, bodyColor.b) < 0.45;
+    }
+
+    return false; // Default to light background
+  }
+
   function createDot(x, y) {
-    const dot = document.createElement('div');
+    var dot = document.createElement('div');
     dot.className = 'cursor-dot';
 
-    // Random size
-    const size = random(config.dotSizeMin, config.dotSizeMax);
+    var size = random(config.dotSizeMin, config.dotSizeMax);
+    var offsetX = random(-config.offsetRange, config.offsetRange);
+    var offsetY = random(-config.offsetRange, config.offsetRange);
 
-    // Random offset for organic feel
-    const offsetX = random(-config.offsetRange, config.offsetRange);
-    const offsetY = random(-config.offsetRange, config.offsetRange);
+    // Check background brightness (with caching for performance)
+    var now = performance.now();
+    if (now - cacheTime > CACHE_TTL) {
+      cachedIsDark = isDarkBackground(x, y);
+      cacheTime = now;
+    }
 
-    // Random color from palette
-    const color = colors[Math.floor(Math.random() * colors.length)];
+    // Pick color from the appropriate palette
+    var palette = cachedIsDark ? palettes.dark : palettes.light;
+    var color = palette[Math.floor(Math.random() * palette.length)];
+    var opacity = random(config.opacityMin, config.opacityMax);
 
-    // Random opacity
-    const opacity = random(config.opacityMin, config.opacityMax);
-
-    // Apply styles
-    dot.style.width = `${size}px`;
-    dot.style.height = `${size}px`;
-    dot.style.left = `${x + offsetX}px`;
-    dot.style.top = `${y + offsetY}px`;
+    dot.style.width = size + 'px';
+    dot.style.height = size + 'px';
+    dot.style.left = (x + offsetX) + 'px';
+    dot.style.top = (y + offsetY) + 'px';
     dot.style.backgroundColor = color;
     dot.style.opacity = opacity;
 
     document.body.appendChild(dot);
 
-    // Track the dot
-    const dotData = {
-      element: dot,
-      createdAt: performance.now()
-    };
+    var dotData = { element: dot };
     dots.push(dotData);
 
-    // Trigger animation on next frame
-    requestAnimationFrame(() => {
+    requestAnimationFrame(function() {
       dot.classList.add('cursor-dot--fade');
     });
 
-    // Remove after animation completes
-    setTimeout(() => {
+    setTimeout(function() {
       removeDot(dotData);
     }, config.animationDuration + 50);
 
-    // Enforce maximum dots limit
     while (dots.length > config.maxDots) {
       removeDot(dots[0]);
     }
   }
 
-  /**
-   * Remove a dot from DOM and tracking array
-   */
   function removeDot(dotData) {
-    const index = dots.indexOf(dotData);
+    var index = dots.indexOf(dotData);
     if (index > -1) {
       dots.splice(index, 1);
     }
@@ -117,51 +168,40 @@
     }
   }
 
-  /**
-   * Handle mouse movement
-   */
   function handleMouseMove(e) {
-    const now = performance.now();
-    const x = e.clientX;
-    const y = e.clientY;
+    var now = performance.now();
+    var x = e.clientX;
+    var y = e.clientY;
 
-    // Check throttle
     if (now - lastSpawnTime < config.throttleMs) {
       return;
     }
 
-    // Check minimum distance
-    const distance = getDistance(lastX, lastY, x, y);
+    var distance = getDistance(lastX, lastY, x, y);
     if (distance < config.minDistance && lastSpawnTime > 0) {
       return;
     }
 
-    // Spawn dot
     createDot(x, y);
 
-    // Update state
     lastSpawnTime = now;
     lastX = x;
     lastY = y;
   }
 
-  /**
-   * Initialize the cursor trail
-   */
   function init() {
-    // Use passive listener for better scroll performance
     document.addEventListener('mousemove', handleMouseMove, { passive: true });
 
-    // Clean up dots when page is hidden
-    document.addEventListener('visibilitychange', () => {
+    document.addEventListener('visibilitychange', function() {
       if (document.hidden) {
-        dots.forEach(dotData => removeDot(dotData));
+        for (var i = dots.length - 1; i >= 0; i--) {
+          removeDot(dots[i]);
+        }
         dots = [];
       }
     });
   }
 
-  // Start when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
