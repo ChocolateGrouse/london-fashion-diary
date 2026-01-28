@@ -52,6 +52,19 @@ function renderWeekPage(week) {
 
   const { prev, next } = ContentLoader.getAdjacentWeeks(week.weekNumber);
 
+  // Collect all images for lightbox
+  const allImages = [];
+  if (week.sections) {
+    week.sections.forEach(section => {
+      if (section.images) {
+        allImages.push(...section.images);
+      }
+    });
+  }
+  if (week.images) {
+    allImages.push(...week.images);
+  }
+
   main.innerHTML = `
     <!-- Hero -->
     <section class="week-hero">
@@ -70,14 +83,43 @@ function renderWeekPage(week) {
       </div>
     </section>
 
-    <!-- Essay -->
-    ${week.essay ? `
+    <!-- Sections with side images -->
+    ${week.sections ? `
+      <article class="week-content">
+        ${week.sections.map((section, sectionIndex) => {
+          const hasImages = section.images && section.images.length > 0;
+          const imageStartIndex = allImages.findIndex(img =>
+            section.images && section.images[0] && img.src === section.images[0].src
+          );
+          return `
+            <section class="week-section ${hasImages ? 'week-section--with-images' : ''} ${sectionIndex % 2 === 1 ? 'week-section--alt' : ''}">
+              <div class="week-section__text">
+                ${section.heading ? `<h2 class="week-section__heading">${section.heading}</h2>` : ''}
+                <p>${section.text}</p>
+              </div>
+              ${hasImages ? `
+                <div class="week-section__images">
+                  ${section.images.map((img, imgIndex) => `
+                    <figure class="week-section__image" data-index="${imageStartIndex + imgIndex}">
+                      <img src="${img.src}" alt="${img.alt || ''}" loading="lazy">
+                    </figure>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </section>
+          `;
+        }).join('')}
+      </article>
+    ` : ''}
+
+    <!-- Legacy Essay support -->
+    ${!week.sections && week.essay ? `
       <article class="week-essay">
         ${formatEssay(week.essay)}
       </article>
     ` : ''}
 
-    <!-- Gallery -->
+    <!-- Gallery (for additional images) -->
     ${week.images && week.images.length > 0 ? `
       <section class="week-gallery">
         <div class="week-gallery__header">
@@ -86,7 +128,7 @@ function renderWeekPage(week) {
         </div>
         <div class="week-gallery__grid">
           ${week.images.map((img, index) => `
-            <figure class="gallery-item" data-index="${index}">
+            <figure class="gallery-item" data-index="${allImages.length - week.images.length + index}">
               <img src="${img.src}" alt="${img.alt || week.title}" loading="lazy"
                    onerror="this.parentElement.style.display='none'">
               ${img.caption ? `<figcaption class="gallery-item__caption">${img.caption}</figcaption>` : ''}
@@ -117,7 +159,7 @@ function renderWeekPage(week) {
   `;
 
   // Store images for lightbox
-  window.currentImages = week.images || [];
+  window.currentImages = allImages;
 }
 
 /**
@@ -303,9 +345,9 @@ function setupLightbox() {
 
   let currentIndex = 0;
 
-  // Open lightbox on image click
+  // Open lightbox on image click (gallery items and section images)
   document.addEventListener('click', (e) => {
-    const galleryItem = e.target.closest('.gallery-item');
+    const galleryItem = e.target.closest('.gallery-item, .week-section__image');
     if (galleryItem) {
       currentIndex = parseInt(galleryItem.dataset.index, 10);
       openLightbox(currentIndex);

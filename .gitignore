@@ -25,3 +25,6 @@ images/originals/
 
 # Node (if ever needed)
 node_modules/
+
+# Local Netlify folder
+.netlify

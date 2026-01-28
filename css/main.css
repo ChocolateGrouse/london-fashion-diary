@@ -983,7 +983,7 @@ button {
   color: rgba(255,255,255,0.4);
 }
 
-/* Week Essay */
+/* Week Essay (legacy) */
 .week-essay {
   max-width: 680px;
   margin: 0 auto;
@@ -1009,6 +1009,146 @@ button {
   margin-right: 1rem;
   margin-top: 0.5rem;
   color: var(--color-accent);
+}
+
+/* Week Content - Sections with Side Images */
+.week-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md) var(--space-2xl);
+}
+
+.week-section {
+  margin-bottom: var(--space-xl);
+}
+
+.week-section--with-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.week-section--with-images.week-section--alt {
+  direction: rtl;
+}
+
+.week-section--with-images.week-section--alt > * {
+  direction: ltr;
+}
+
+.week-section__text {
+  max-width: 600px;
+}
+
+.week-section__heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
+}
+
+.week-section__text p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+/* First section drop cap */
+.week-section:first-child .week-section__text p::first-letter {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 700;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.75rem;
+  margin-top: 0.4rem;
+  color: var(--color-accent);
+}
+
+.week-section__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-md));
+}
+
+.week-section__image {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s ease;
+}
+
+.week-section__image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.18);
+}
+
+.week-section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.week-section__image:hover img {
+  transform: scale(1.05);
+}
+
+/* Stagger images for visual interest */
+.week-section__image:nth-child(2) {
+  transform: translateY(var(--space-md));
+}
+
+.week-section__image:nth-child(2):hover {
+  transform: translateY(calc(var(--space-md) - 4px));
+}
+
+.week-section__image:nth-child(3) {
+  transform: translateY(calc(var(--space-sm) * -1));
+}
+
+.week-section__image:nth-child(3):hover {
+  transform: translateY(calc(var(--space-sm) * -1 - 4px));
+}
+
+.week-section__image:nth-child(4) {
+  transform: translateY(var(--space-xs));
+}
+
+.week-section__image:nth-child(4):hover {
+  transform: translateY(calc(var(--space-xs) - 4px));
+}
+
+/* Mobile: Stack vertically */
+@media (max-width: 900px) {
+  .week-section--with-images {
+    grid-template-columns: 1fr;
+  }
+
+  .week-section--with-images.week-section--alt {
+    direction: ltr;
+  }
+
+  .week-section__images {
+    position: relative;
+    top: 0;
+    margin-top: var(--space-md);
+  }
+
+  .week-section__image:nth-child(n) {
+    transform: none;
+  }
+
+  .week-section__image:nth-child(n):hover {
+    transform: translateY(-4px);
+  }
 }
 
 /* Week Gallery */

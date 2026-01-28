@@ -14,12 +14,55 @@
     {
       "weekNumber": 1,
       "slug": "week-1",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 1",
-      "title": "Week 1",
+      "title": "London Retail Safari",
       "dateDisplay": "January 13-19, 2026",
-      "essay": null,
-      "featuredImage": null,
+      "featuredImage": {
+        "src": "images/week-1/goodhood/IMG_1240.jpg",
+        "alt": "Goodhood storefront in Shoreditch"
+      },
+      "sections": [
+        {
+          "text": "For my first exploration into the UK fashion scene, I decided to take a short trip to Shoreditch before my Wednesday class. My first comparative observation coming from the States was quite a clear distinction; fashion in London does not force itself upon you in the way I am used to.",
+          "images": []
+        },
+        {
+          "heading": "Uniqlo",
+          "text": "My favorite brand was Uniqlo, a store I often visit for its low prices and high-quality materials. Walking into the store, I could hardly see the bold signs I expected; instead, I walked upon a row of columns, within which Uniqlo sat. I was greeted by a guard and the whole process seemed to be of my own creation. Similar to the stores in the US, 90% of the clothes were folded neatly on shelves with an image of a flowing shirt or pants nearby. I noticed many mannequins that displayed a large emphasis on layering, alongside an automated consumer checkout station. When I went to try some pieces on, the process was exactly what I anticipated. I brought two shirts to try on, and was handed a number 2, being told to go to fitting room six. The whole shopping experience felt extraordinarily transactional, many sizes were out of stock, and I was directed to go to the website to find exactly what I was looking for. In many ways, the experience felt exactly like it does in the States, with perhaps a slight difference in how the mannequins were dressed for London weather. I purchased a casual shirt that is as basic as can be, and went to the second store on my list.",
+          "images": [
+            { "src": "images/week-1/uniqlo/IMG_1211.jpg", "alt": "Uniqlo store entrance" },
+            { "src": "images/week-1/uniqlo/IMG_1213.jpg", "alt": "Uniqlo clothing display" },
+            { "src": "images/week-1/uniqlo/IMG_1216.jpg", "alt": "Uniqlo mannequins" },
+            { "src": "images/week-1/uniqlo/IMG_1233.jpg", "alt": "Uniqlo interior" }
+          ]
+        },
+        {
+          "heading": "Goodhood",
+          "text": "As I walked on the road towards Goodhood, I instantly felt a more curated atmosphere. The windowfronts were intensely artistic, calling into question what the store was actually selling. A very pleasant aroma was wafting through the front entrance, and the clothes felt like individual pieces, all hanging and with lots of separation between each garment. Many pairs of unique-looking shoes lined the walls alongside some interactive art pieces, such as a music booth. The store seemed curated towards a more edgy crowd that values their clothes and has a somewhat high willingness to pay. I grabbed a hat that I liked and identified a short-sleeve button-up. While I was looking at the shirt, the impeccable customer service displayed itself. They offered to hold the hat I was carrying at the register and to let me try on the shirt in whatever size I would like. Goodhood clearly makes a point. What they sell is cool, and they let the customer know that by making their store a cool place to be. Unlike Uniqlo, Goodhood cultivated a shopping experience, one where the customer will remember the purchasing experience every time they wear their piece.",
+          "images": [
+            { "src": "images/week-1/goodhood/IMG_1240.jpg", "alt": "Goodhood storefront" },
+            { "src": "images/week-1/goodhood/IMG_1242.jpg", "alt": "Goodhood interior" },
+            { "src": "images/week-1/goodhood/IMG_1244.jpg", "alt": "Goodhood display" },
+            { "src": "images/week-1/goodhood/IMG_1245.jpg", "alt": "Goodhood shoes" },
+            { "src": "images/week-1/goodhood/IMG_1247.jpg", "alt": "Goodhood clothing" },
+            { "src": "images/week-1/goodhood/IMG_1250.jpg", "alt": "Goodhood details" }
+          ]
+        },
+        {
+          "heading": "Brick Lane Vintage Market",
+          "text": "The third and perhaps most unique experience I had was at the Brick Lane Vintage Market. Tucked away on a quiet street, I found a purple-lit staircase leading into an expansive room with many small second-hand clothing shops. Music was blasting from various vendors and the owners were ready to engage with you about their collections amidst the chaotic frenzy. I saw some very fashionable outfits donned by the shopkeepers, fashion was clearly their passion and by extension their livelihood. As I walked around the various stores, I felt a strong sense of discovery. Each owner's passions were displayed clearly, some owners loved bags, some loved overcoats. The specialization was incredible, and each store had something unique to offer. Brick Lane felt fundamentally different than the other two stores, here, fashion was a lifestyle, and they invited you into their worlds, not the other way around. If you aren't interested in what they are selling, they aren't interested in you, and if you find interest, the bond created with the shopowner was instantaneous. Each of them instantly invited me to try on several items, and price negotiation was on the table, especially if you wanted to buy a couple of items. I have had similar experiences to this in the US, except Brick Lane felt more personal on both sides. I witnessed shopkeepers drilling into their walls as they added more hooks, and they readily showed me around their stock to help me find items they thought would look good on me. The permanence of the market made it feel real and passionate, far less transactory than the experiences I have had in the States at similar establishments.",
+          "images": [
+            { "src": "images/week-1/brick-lane/IMG_1251.jpg", "alt": "Brick Lane Vintage Market entrance" },
+            { "src": "images/week-1/brick-lane/IMG_1253.jpg", "alt": "Brick Lane vendors" },
+            { "src": "images/week-1/brick-lane/IMG_1255.jpg", "alt": "Brick Lane vintage clothing" }
+          ]
+        },
+        {
+          "text": "This walk was the perfect starting point for my fashion exploration in London. It gave me a perception of the passionate scene, alongside the high-end experiences London has to offer. I reaffirmed my desire to engage with the fashion community here in London, and it helped me realize that I want to find items that make me feel more like me.",
+          "images": []
+        }
+      ],
       "images": []
     },
     {
