@@ -1396,6 +1396,39 @@ button {
 }
 
 /* ============================================================
+   CURSOR TRAIL - INK DROP EFFECT
+   ============================================================ */
+.cursor-dot {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: scale(1);
+  transition:
+    opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.cursor-dot--fade {
+  opacity: 0 !important;
+  transform: scale(0.3);
+}
+
+/* Hide cursor trail on touch devices and reduced motion preference */
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-dot {
+    display: none;
+  }
+}
+
+/* ============================================================
    PRINT STYLES
    ============================================================ */
 @media print {
