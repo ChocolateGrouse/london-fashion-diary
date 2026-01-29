@@ -11,17 +11,17 @@
     return;
   }
 
-  // Configuration - 1500% amplified (15x original)
+  // Configuration - MAXIMUM TRAIL
   var config = {
-    throttleMs: 150,          // Spawn rate for 10-15 dots visible
-    minDistance: 8,           // Reasonable spacing
-    dotSizeMin: 90,           // 15x original (6px * 15)
-    dotSizeMax: 150,          // 15x original (10px * 15)
-    opacityMin: 0.8,          // Very visible
+    throttleMs: 30,           // Spawn constantly
+    minDistance: 2,           // Almost no gap
+    dotSizeMin: 150,          // Huge dots
+    dotSizeMax: 250,          // Massive dots
+    opacityMin: 0.9,          // Nearly full
     opacityMax: 1.0,          // Fully opaque
-    animationDuration: 2500,  // Match CSS transition
-    maxDots: 20,              // Cap at ~15-20 dots
-    offsetRange: 25           // Wide spread
+    animationDuration: 4000,  // Last 4 seconds
+    maxDots: 100,             // Tons of dots
+    offsetRange: 40           // Big spread
   };
 
   // Color palettes for light vs dark backgrounds
