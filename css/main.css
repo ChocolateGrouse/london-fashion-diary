@@ -1425,9 +1425,9 @@ button {
 }
 
 .cursor-dot--fade {
-  transition: opacity 800ms ease-out, transform 800ms ease-out;
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
   opacity: 0 !important;
-  transform: scale(0.2);
+  transform: scale(0.3);
 }
 
 /* Hide cursor trail on touch devices and reduced motion preference */

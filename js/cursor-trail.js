@@ -9,12 +9,13 @@
   if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
 
   var config = {
-    spawnInterval: 25,       // New dot every 25ms when moving
-    dotSizeMin: 15,
-    dotSizeMax: 40,
-    stayVisibleMs: 1200,     // Stay FULLY OPAQUE for 1.2 seconds
-    fadeMs: 800,             // Then fade out over 0.8s
-    maxDots: 60,
+    spawnInterval: 30,       // Slightly slower spawn
+    dotSizeMin: 6,           // Smaller dots
+    dotSizeMax: 16,          // Smaller max
+    stayVisibleMs: 600,      // Half as long visible
+    fadeMs: 400,             // Half as long fade
+    maxDots: 40,
+    opacity: 0.5,            // Translucent
     colors: [
       '#CE1126',  // London bus red
       '#ff4757',  // Bright red
@@ -39,7 +40,8 @@
       'left: ' + (x - size/2) + 'px;' +
       'top: ' + (y - size/2) + 'px;' +
       'background: ' + color + ';' +
-      'box-shadow: 0 0 ' + size + 'px ' + color + ', 0 0 ' + (size*2) + 'px ' + color + ';';
+      'opacity: ' + config.opacity + ';' +
+      'box-shadow: 0 0 ' + (size/2) + 'px ' + color + ';';
 
     document.body.appendChild(dot);
     dots.push(dot);
