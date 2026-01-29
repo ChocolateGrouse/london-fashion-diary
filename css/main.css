@@ -10,11 +10,11 @@
    CUSTOM CURSOR - Safety Pin
    ============================================================ */
 html, body {
-  cursor: url('/images/cursors/safety-pin.png') 4 4, auto;
+  cursor: url('../images/cursors/safety-pin.png') 6 6, auto;
 }
 
-*, *::before, *::after {
-  cursor: inherit;
+a, button, [role="button"], .stop, .gallery-item, .week-section__image {
+  cursor: url('../images/cursors/safety-pin.png') 6 6, pointer;
 }
 
 /* ============================================================
