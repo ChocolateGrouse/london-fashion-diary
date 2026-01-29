@@ -3,26 +3,6 @@
  * Renders individual week content with editorial styling
  */
 
-/**
- * Helper: Convert JPG path to WebP path
- */
-function toWebP(src) {
-  return src.replace(/\.jpg$/i, '.webp');
-}
-
-/**
- * Helper: Create picture element with WebP + JPG fallback
- */
-function createPictureHTML(src, alt, extraAttrs = '') {
-  const webpSrc = toWebP(src);
-  return `
-    <picture>
-      <source srcset="${webpSrc}" type="image/webp">
-      <img src="${src}" alt="${alt || ''}" ${extraAttrs} decoding="async" class="img-loading" onload="this.classList.remove('img-loading')">
-    </picture>
-  `;
-}
-
 (async function() {
   // Get week slug from URL
   const params = new URLSearchParams(window.location.search);
@@ -90,7 +70,7 @@ function renderWeekPage(week) {
     <section class="week-hero">
       ${week.featuredImage?.src ? `
         <div class="week-hero__image">
-          ${createPictureHTML(week.featuredImage.src, week.featuredImage.alt || week.title)}
+          <img src="${week.featuredImage.src}" alt="${week.featuredImage.alt || week.title}">
         </div>
       ` : ''}
       <div class="week-hero__content">
@@ -121,7 +101,7 @@ function renderWeekPage(week) {
                 <div class="week-section__images">
                   ${section.images.map((img, imgIndex) => `
                     <figure class="week-section__image" data-index="${imageStartIndex + imgIndex}">
-                      ${createPictureHTML(img.src, img.alt, 'loading="lazy"')}
+                      <img src="${img.src}" alt="${img.alt || ''}" loading="lazy">
                     </figure>
                   `).join('')}
                 </div>
@@ -149,7 +129,8 @@ function renderWeekPage(week) {
         <div class="week-gallery__grid">
           ${week.images.map((img, index) => `
             <figure class="gallery-item" data-index="${allImages.length - week.images.length + index}">
-              ${createPictureHTML(img.src, img.alt || week.title, 'loading="lazy" onerror="this.closest(\'figure\').style.display=\'none\'"')}
+              <img src="${img.src}" alt="${img.alt || week.title}" loading="lazy"
+                   onerror="this.parentElement.style.display='none'">
               ${img.caption ? `<figcaption class="gallery-item__caption">${img.caption}</figcaption>` : ''}
             </figure>
           `).join('')}
@@ -426,13 +407,7 @@ function setupLightbox() {
     if (images.length === 0) return;
 
     const img = images[index];
-    // Try WebP first, fallback to JPG on error
-    const webpSrc = img.src.replace(/\.jpg$/i, '.webp');
-    lightboxImage.onerror = function() {
-      this.onerror = null;
-      this.src = img.src;
-    };
-    lightboxImage.src = webpSrc;
+    lightboxImage.src = img.src;
     lightboxImage.alt = img.alt || '';
     lightboxCaption.textContent = img.caption || '';
   }

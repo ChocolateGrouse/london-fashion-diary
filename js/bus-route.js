@@ -4,13 +4,6 @@
  * Matches the editorial design system
  */
 
-/**
- * Helper: Convert JPG path to WebP path
- */
-function toWebP(src) {
-  return src.replace(/\.jpg$/i, '.webp');
-}
-
 (async function() {
   // Wait for content to load
   const data = await ContentLoader.init();
@@ -57,20 +50,13 @@ function createStopHTML(week) {
   // Image HTML (only for published weeks with images)
   let imageHTML = '';
   if (isPublished && week.featuredImage?.src) {
-    const webpSrc = toWebP(week.featuredImage.src);
     imageHTML = `
       <div class="stop__image">
         <span class="stop__week-badge">Week ${week.weekNumber}</span>
-        <picture>
-          <source srcset="${webpSrc}" type="image/webp">
-          <img src="${week.featuredImage.src}"
-               alt="${week.featuredImage.alt || week.title}"
-               loading="lazy"
-               decoding="async"
-               class="img-loading"
-               onload="this.classList.remove('img-loading')"
-               onerror="this.closest('.stop__image').classList.add('stop__image--empty')">
-        </picture>
+        <img src="${week.featuredImage.src}"
+             alt="${week.featuredImage.alt || week.title}"
+             loading="lazy"
+             onerror="this.closest('.stop__image').classList.add('stop__image--empty')">
         <div class="stop__image-overlay"></div>
       </div>
     `;

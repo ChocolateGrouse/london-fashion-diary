@@ -86,21 +86,6 @@ img {
   display: block;
 }
 
-/* Progressive image loading - blur-up effect */
-img.img-loading {
-  filter: blur(10px);
-  opacity: 0.7;
-  transition: filter 0.4s ease-out, opacity 0.4s ease-out;
-}
-
-img:not(.img-loading) {
-  filter: blur(0);
-  opacity: 1;
-}
-
-picture {
-  display: block;
-}
 
 a {
   color: inherit;
