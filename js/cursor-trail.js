@@ -11,17 +11,17 @@
     return;
   }
 
-  // Configuration (amplified 200%)
+  // Configuration (amplified - longer lasting + 3x more dots)
   var config = {
-    throttleMs: 25,           // Spawn 2x faster
-    minDistance: 5,           // Spawn closer together
-    dotSizeMin: 12,           // 2x bigger
-    dotSizeMax: 20,           // 2x bigger
-    opacityMin: 0.5,          // More visible
-    opacityMax: 0.85,         // Much more visible
-    animationDuration: 1200,  // Last longer
-    maxDots: 60,              // 2x more dots
-    offsetRange: 8            // More spread
+    throttleMs: 15,           // Spawn faster (more dots)
+    minDistance: 3,           // Closer together (more dots)
+    dotSizeMin: 12,           // Keep current size
+    dotSizeMax: 20,           // Keep current size
+    opacityMin: 0.5,          // Keep current opacity
+    opacityMax: 0.85,         // Keep current opacity
+    animationDuration: 3000,  // Last 3 seconds
+    maxDots: 200,             // 3x+ more dots on screen
+    offsetRange: 10           // Slightly more spread
   };
 
   // Color palettes for light vs dark backgrounds
