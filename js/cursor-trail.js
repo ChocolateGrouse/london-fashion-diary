@@ -11,17 +11,17 @@
     return;
   }
 
-  // Configuration
+  // Configuration (amplified 200%)
   var config = {
-    throttleMs: 50,
-    minDistance: 10,
-    dotSizeMin: 6,
-    dotSizeMax: 10,
-    opacityMin: 0.3,
-    opacityMax: 0.6,
-    animationDuration: 800,
-    maxDots: 30,
-    offsetRange: 4
+    throttleMs: 25,           // Spawn 2x faster
+    minDistance: 5,           // Spawn closer together
+    dotSizeMin: 12,           // 2x bigger
+    dotSizeMax: 20,           // 2x bigger
+    opacityMin: 0.5,          // More visible
+    opacityMax: 0.85,         // Much more visible
+    animationDuration: 1200,  // Last longer
+    maxDots: 60,              // 2x more dots
+    offsetRange: 8            // More spread
   };
 
   // Color palettes for light vs dark backgrounds
