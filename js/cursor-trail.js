@@ -11,17 +11,17 @@
     return;
   }
 
-  // Configuration (amplified - longer lasting + 3x more dots)
+  // Configuration - VERY visible trail
   var config = {
-    throttleMs: 15,           // Spawn faster (more dots)
-    minDistance: 3,           // Closer together (more dots)
-    dotSizeMin: 12,           // Keep current size
-    dotSizeMax: 20,           // Keep current size
-    opacityMin: 0.5,          // Keep current opacity
-    opacityMax: 0.85,         // Keep current opacity
-    animationDuration: 3000,  // Last 3 seconds
-    maxDots: 200,             // 3x+ more dots on screen
-    offsetRange: 10           // Slightly more spread
+    throttleMs: 8,            // Spawn very fast
+    minDistance: 1,           // Spawn constantly
+    dotSizeMin: 25,           // Large dots
+    dotSizeMax: 45,           // Very large dots
+    opacityMin: 0.7,          // High visibility
+    opacityMax: 1.0,          // Fully opaque
+    animationDuration: 4000,  // Last 4 seconds
+    maxDots: 300,             // Many dots
+    offsetRange: 15           // Good spread
   };
 
   // Color palettes for light vs dark backgrounds
