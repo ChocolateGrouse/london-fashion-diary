@@ -1410,7 +1410,7 @@ button {
 }
 
 .cursor-dot--fade {
-  transition: opacity 400ms ease-out, transform 400ms ease-out;
+  transition: opacity 270ms ease-out, transform 270ms ease-out;
   opacity: 0 !important;
   transform: scale(0.3);
 }

@@ -12,10 +12,10 @@
     spawnInterval: 30,       // Slightly slower spawn
     dotSizeMin: 6,           // Smaller dots
     dotSizeMax: 16,          // Smaller max
-    stayVisibleMs: 600,      // Half as long visible
-    fadeMs: 400,             // Half as long fade
+    stayVisibleMs: 400,      // 1/3 faster
+    fadeMs: 270,             // 1/3 faster fade
     maxDots: 40,
-    opacity: 0.5,            // Translucent
+    opacity: 0.35,           // More translucent
     colors: [
       '#CE1126',  // London bus red
       '#ff4757',  // Bright red
