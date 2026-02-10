@@ -117,12 +117,49 @@
     {
       "weekNumber": 3,
       "slug": "week-3",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 3",
-      "title": "Week 3",
+      "title": "Herrods",
       "dateDisplay": "January 27 - February 2, 2026",
-      "essay": null,
-      "featuredImage": null,
+      "featuredImage": {
+        "src": "images/week-3/IMG_1931.jpg",
+        "alt": "Harrods department store exterior at night"
+      },
+      "sections": [
+        {
+          "text": "When walking into Herrods, I was instantly washed over with a slight sense of familiarity. I was reminded of similar luxury shopping experiences in New York, such as Saks, Bloomingdale's, and Bergdorf's. However, as I walked through the various floors, I was overwhelmed by the sheer scale of Harrods. I have never stepped foot in a Luxury shopping space that can compete with the scale that Harrods boasts. Not only does Herrods showcase an abundance of designer goods, but it does so in an opulent setting, the building's trim perfectly exemplifies what lies within. Millions worth of merchandise and countless hours of designers' time.",
+          "images": [
+            { "src": "images/week-3/IMG_1940.jpg", "alt": "Harrods perfume hall with chandeliers" },
+            { "src": "images/week-3/IMG_1944.jpg", "alt": "Harrods floor directory" },
+            { "src": "images/week-3/IMG_1941.jpg", "alt": "Harrods Egyptian escalators" },
+            { "src": "images/week-3/IMG_1947.jpg", "alt": "Luxury fabric display" }
+          ]
+        },
+        {
+          "text": "It was the single most overwhelming and amazing walk I have had in quite some time. Hundreds of nicely dressed shopping assistants looked me up and down, assessing if I was a potential customer. Many asked if I was alright or if I was looking for anything in particular. It was an experience to note, and so were the customers. Many of the customers were dressed to the nines and carried multiple bags from various designer stores.",
+          "images": [
+            { "src": "images/week-3/IMG_1949.jpg", "alt": "Burberry entrance" },
+            { "src": "images/week-3/IMG_1948.jpg", "alt": "Issey Miyake store" },
+            { "src": "images/week-3/IMG_1939.jpg", "alt": "McQueen bag display" }
+          ]
+        },
+        {
+          "text": "The shopping experience felt intimidating yet intriguing to me; to many, however, it seemed like a performance. They were letting the world know they shopped luxuriously, and they did not mind being seen. This style of shopping is the most substantial similarity between Herrods and the stores in New York that are similar to it. People gain a certain status or impression of such when they make large purchases and carry around large bags. Shopping at Harrods is much more of a performance than a practical shopping experience.",
+          "images": [
+            { "src": "images/week-3/IMG_1938.jpg", "alt": "Hermès scarf display" },
+            { "src": "images/week-3/IMG_1960.jpg", "alt": "Tom Ford suit display" },
+            { "src": "images/week-3/IMG_1954.jpg", "alt": "Luxury suits display" },
+            { "src": "images/week-3/IMG_1942.jpg", "alt": "Designer fragrance collection" }
+          ]
+        },
+        {
+          "text": "Overall, Herrods taught me that sometimes, it is the experience in itself that people crave. To know that something is desired further compels their purchasing decision. Herrods caters to a particular crowd, and that crowd wants to feel like they are getting the best of the best.",
+          "images": [
+            { "src": "images/week-3/IMG_1952.jpg", "alt": "Mannequin in illuminated display" },
+            { "src": "images/week-3/IMG_1956.jpg", "alt": "Fashion mannequin display" }
+          ]
+        }
+      ],
       "images": []
     },
     {
