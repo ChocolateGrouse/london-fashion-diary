@@ -74,7 +74,7 @@ function createStopHTML(week) {
       <div class="stop__content">
         <span class="stop__label">${week.stopName}</span>
         <h3 class="stop__title">${week.title}</h3>
-        <span class="stop__date">${week.dateDisplay}</span>
+        ${isPublished && week.dateDisplay ? `<span class="stop__date">${week.dateDisplay}</span>` : ''}
         <span class="stop__status">Coming Soon</span>
       </div>
 
