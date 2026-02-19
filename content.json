@@ -275,12 +275,84 @@
     {
       "weekNumber": 4,
       "slug": "week-4",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 4",
-      "title": "Week 4",
+      "title": "Venice & Milan",
       "dateDisplay": "",
-      "essay": null,
-      "featuredImage": null,
+      "featuredImage": {
+        "src": "images/week-4/IMG_2243.jpg",
+        "alt": "Interacting with a costumed performer at Venice Carnival"
+      },
+      "sections": [
+        {
+          "text": "During a recent trip, I visited Italy, an energetic hub for fashion, and I would love to share my experience. My first stop was Venice for the Carnival, a two-week festival celebrating 12th-century Italian traditions. During the Carnival, people dress in elaborate masks and costumes and parade through the city. There are public plays in the squares, and costume competitions to reward the most elaborate costumes. Many people clearly spent countless hours designing their costumes. They stood as symbols of the tradition that has run for hundreds of years.",
+          "images": [
+            {
+              "src": "images/week-4/IMG_2243.jpg",
+              "alt": "Interacting with a costumed performer at Venice Carnival"
+            }
+          ]
+        },
+        {
+          "text": "Of course, when visiting, I had to participate; however, I did not want to buy a cheap plastic mask that would soon be thrown away. Due to my desire to purchase something that would last, I took the time to find a high-quality, handcrafted mask. I went to a highly rated shop, and there were hundreds of masks lined up, each slightly unique. The first mask I picked up stuck with me as I tried on others; it was destined to be. I purchased the mask I was initially drawn to and wore it the rest of the day. Purchasing a handcrafted mask was important to the Carnival\u2019s custom, as it represents the work people put into their craft to support their traditions. With many shops selling cheap plastic masks, I was glad that I purchased one that I can keep for years to come.",
+          "images": [
+            {
+              "src": "images/week-4/IMG_2268.jpg",
+              "alt": "Handcrafted mask shop interior in Venice"
+            },
+            {
+              "src": "images/week-4/IMG_2264.jpg",
+              "alt": "Masks and leather goods hanging from ceiling"
+            }
+          ]
+        },
+        {
+          "text": "The Carnival as a whole was almost like a display; everyone was wearing either full costumes or small masks, and the costumes were being flaunted for everyone to see. People in full costumes carried themselves as if they were on the runway; they allowed photos and were definitely hoping to get recognition by winning the costume contest. The way people in elaborate costumes carried themselves, in a way, echoed the performative wear of the people shopping at Harrods. They spent a lot of time and money on their costumes, and they wanted to be seen and recognized for their efforts.",
+          "images": []
+        },
+        {
+          "text": "I had two very alternate experiences in Milan. I experienced top-of-the-line luxury at an extremely famous mall at the pinnacle of global high-end fashion. The Quadrilatero della Moda was very similar to Harrods; however, there were definitely more people simply window shopping than in Harrods. Due to its open, very public nature, the Quadrilatero della Moda was an experience open to all, but the stores were more selective. Each with its own doorman, you really needed to be shopping for the goods inside to enter. There were long lines outside the shops, though only a couple of people were inside; it was very public, yet it still felt exclusive.",
+          "images": [
+            {
+              "src": "images/week-4/IMG_2422.jpg",
+              "alt": "Galleria Vittorio Emanuele II interior"
+            },
+            {
+              "src": "images/week-4/IMG_2420.jpg",
+              "alt": "Galleria Vittorio Emanuele II with Prada storefront"
+            },
+            {
+              "src": "images/week-4/IMG_2423.jpg",
+              "alt": "Galleria Vittorio Emanuele II luxury shops"
+            }
+          ]
+        },
+        {
+          "text": "The other side of Milan I witnessed was the charity shop side. Many of the shops I went into were displaying used high-end goods, and I found that interesting. There was a whole ecosystem of charity shops, ranging in price. I really enjoyed my experience; the amount of leather goods was extreme, and overall, the items in the charity shops were very fashionable. It was clear that Milan residents donated/sold these goods to shops; the items offered a stylish yet attainable shopping experience. Every shop owner was accepting, and they welcomed me to come in and look at the goods, regardless of the price. I ended up purchasing some jeans and a Ralph Lauren jacket at a charity shop, which is relevant because Ralph Lauren is my group brand. I found that although it is an American brand, the price was quite low compared to what I would have found in the States.",
+          "images": [
+            {
+              "src": "images/week-4/IMG_2262.jpg",
+              "alt": "Browsing leather goods at a Milan charity shop"
+            },
+            {
+              "src": "images/week-4/IMG_2432.jpg",
+              "alt": "Charity shop clothing racks"
+            },
+            {
+              "src": "images/week-4/IMG_2433.jpg",
+              "alt": "Colorful clothing on display at charity shop"
+            },
+            {
+              "src": "images/week-4/IMG_2434.jpg",
+              "alt": "Milan charity shop interior"
+            }
+          ]
+        },
+        {
+          "text": "Compared to the London fashion scene, I learned that the Italian scene is much more curated and selective. There was a strong emphasis on leather goods rather than on many British brands. The international designers were still present in Italy; however, the number of handmade Italian leather goods shops far surpassed what I would expect to see in London, and they clearly have found their profitable niche.",
+          "images": []
+        }
+      ],
       "images": []
     },
     {
