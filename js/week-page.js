@@ -79,7 +79,7 @@ function renderWeekPage(week) {
           <span class="week-hero__week">Week ${week.weekNumber}</span>
         </div>
         <h1 class="week-hero__title">${week.title}</h1>
-        <span class="week-hero__date">${week.dateDisplay}</span>
+        ${week.dateDisplay ? `<span class="week-hero__date">${week.dateDisplay}</span>` : ''}
       </div>
     </section>
 
@@ -269,7 +269,7 @@ function showComingSoon(week) {
     <div class="coming-soon-state">
       <span class="coming-soon-state__meta">Week ${week.weekNumber} &mdash; ${week.stopName}</span>
       <h1 class="coming-soon-state__title">Coming Soon</h1>
-      <p class="coming-soon-state__date">${week.dateDisplay}</p>
+      ${week.dateDisplay ? `<p class="coming-soon-state__date">${week.dateDisplay}</p>` : ''}
       <p class="coming-soon-state__text">This stop hasn't been reached yet.<br>Check back soon!</p>
       <a href="/" class="coming-soon-state__link">Back to Route</a>
     </div>
