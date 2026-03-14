@@ -420,13 +420,63 @@
     {
       "weekNumber": 6,
       "slug": "week-6",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 6",
-      "title": "Week 6",
+      "title": "High Holborn Charity Shop",
       "dateDisplay": "",
-      "essay": null,
-      "featuredImage": null,
-      "images": []
+      "featuredImage": {
+        "src": "images/week-6/IMG_2875.jpg",
+        "alt": "John wearing a faded grey leather jacket found at the High Holborn thrift store"
+      },
+      "sections": [
+        {
+          "text": "For a while now, I have had a singular, brown leather jacket. This week, it was finally time for me to expand my wardrobe and invest in another leather piece. I had some free time and, while doing research, identified a thrift store/charity shop that caught my interest. I wanted to find a jacket that fit what I was looking for, and importantly, did not smell musty. This may come as a shock, or maybe not, but often, cluttered charity shop finds look amazing, but boast a musty smell that is hard to look past. Located in High Holborn, I hoped my selected store would not only have a large selection, but the quality would be slightly better, and the garments would be must free. While this may come alongside slightly higher prices, it was a price I was willing to pay.",
+          "images": [
+            {
+              "src": "images/week-6/IMG_2871.jpg",
+              "alt": "Storefront entrance of the High Holborn thrift store with yellow mural wall"
+            },
+            {
+              "src": "images/week-6/IMG_2872.jpg",
+              "alt": "Inside the thrift store showing curated layout with Fresh Delivery sign and neatly organized clothing"
+            }
+          ]
+        },
+        {
+          "text": "Walking up to the shop, I began to see many young people clearly into the thrifting culture. The outfits I was seeing within a two-block radius became vastly more experimental, a very good sign and something I mentally took note of. I walked into the store, and it was quite sizable, sectioned off by clothing items, and color-coded. This shop was a curated thrift store, offering a more high-end shopping experience than standard charity shops. There were designer racks, brand-specific racks, and clothing genre racks. The pricing was quite modest; however, it was likely higher than most comparable shops in London. Interestingly, however, the prices were lower than comparable stores in New York, such as 2nd Street.",
+          "images": [
+            {
+              "src": "images/week-6/IMG_2882.jpg",
+              "alt": "Color-coded clothing racks organized in a rainbow spectrum"
+            },
+            {
+              "src": "images/week-6/IMG_2879.jpg",
+              "alt": "Arc'teryx and Carhartt jackets on the designer rack"
+            },
+            {
+              "src": "images/week-6/IMG_2883.jpg",
+              "alt": "Boots neatly organized by color on built-in shelves"
+            }
+          ]
+        },
+        {
+          "text": "I eventually made my way to the leather jacket section. I was initially looking for a black leather jacket; however, when I stumbled across a faded grey leather jacket, I fell in love at first sight. I tried it on, and loved the way it fit. It was a very casual-fitting jacket, starkly contrasting with the very formal brown jacket I have. I loved the contrasting styles. I was realistically looking for a jacket I could wear in situations where the brown one didn't feel appropriate, and this was the perfect match. The second I tried it on, I didn't let go of it as I shopped for a sweater for my friend. The fact that I was able to find a perfect match showcases the large selection of desirable pieces the High Holborn thrifting scene offers.",
+          "images": [
+            {
+              "src": "images/week-6/IMG_2873.jpg",
+              "alt": "Rack of leather jackets in the thrift store"
+            },
+            {
+              "src": "images/week-6/IMG_2875.jpg",
+              "alt": "John wearing the faded grey leather jacket in a mirror selfie at the store"
+            }
+          ]
+        },
+        {
+          "text": "I loved the High Holborn thrift store; it was a curated experience, and it felt easy to find good items. The whole experience felt like something I had experienced before, both in my hometown of Portland, Oregon, a hub for both typical and curated charity shops, and New York, where the expensive and curated charity shops dominate.",
+          "images": []
+        }
+      ]
     },
     {
       "weekNumber": 7,
