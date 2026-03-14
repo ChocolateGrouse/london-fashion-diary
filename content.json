@@ -623,13 +623,29 @@
     {
       "weekNumber": 9,
       "slug": "week-9",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 9",
-      "title": "Week 9",
+      "title": "Trend Spotting in Mayfair",
       "dateDisplay": "",
-      "essay": null,
-      "featuredImage": null,
-      "images": []
+      "featuredImage": {
+        "src": "images/week-9/mayfair-moodboard.png",
+        "alt": "Moodboard of Mayfair luxury storefront displays featuring floral themes from Chanel, Louis Vuitton, Miu Miu, and more"
+      },
+      "sections": [
+        {
+          "text": "In my efforts to select an ideal area for trend spotting in London, I visited the Mayfair district. I wanted to inspect all the luxury fashion designer storefronts, especially as SS26 collections are being showcased and winter stock is clearing out. My main observation, especially through the windowfront displays, was floral themes everywhere. Chanel and Louis built massive flower sculptures that took over their window, Alice + Olivia filled their display with colorful blooming flowers, and Miu Miu showcased bold floral embroidery against a hot pink background. 7 of the 12 storefronts I focused on carried the flower motif in some form. Florals were clearly a commercial consensus, developed by industry experts over 6 months ago. Floral decorations and themes were the safe commercial options. I observed a few deviations, including an emphasis on heritage from Burberry and minimalism from Max Mara, both bold choices compared to the industry consensus.",
+          "images": [
+            {
+              "src": "images/week-9/mayfair-moodboard.png",
+              "alt": "Moodboard collage of Mayfair storefront photos layered over extracted floral designs from Chanel, Louis Vuitton, and Alice + Olivia displays"
+            }
+          ]
+        },
+        {
+          "text": "The window designs indicate to me that in fashion culture, spring has arrived. While the windows indicated a change, some trails from the winter collections dragged behind. When winter boots share shelf space with colorful sneakers, you can see the winter-to-spring transition in real time. I enjoyed my careful observation, and it allowed me to understand where business and the art of fashion coexist.",
+          "images": []
+        }
+      ]
     },
     {
       "weekNumber": 10,
