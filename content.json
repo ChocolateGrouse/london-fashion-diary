@@ -481,13 +481,67 @@
     {
       "weekNumber": 7,
       "slug": "week-7",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 7",
-      "title": "Week 7",
+      "title": "Marseille",
       "dateDisplay": "",
-      "essay": null,
-      "featuredImage": null,
-      "images": []
+      "featuredImage": {
+        "src": "images/week-7/IMG_2940.jpg",
+        "alt": "The ornate stone exterior of the Uniqlo store in Marseille"
+      },
+      "sections": [
+        {
+          "text": "Arriving in Marseille, clothing and fashion were not really on my mind. I was focused on the desire to go to the beach, get tan, and eat good food. Unfortunately, the weather was disappointing, with temperatures hardly above 60 degrees Fahrenheit. Additionally, both of my companions were overwhelmed and extremely busy with schoolwork and interview prep. As a result of these factors, I was left alone for two consecutive days to entertain myself in the cold French riverara. I took to exploring the streets.",
+          "images": []
+        },
+        {
+          "text": "As I walked aimlessly, I came across a street that made the crowds at Grand Central Terminal seem small. At the end of the walkway was a palace, and on the sides were countless clothing shops.",
+          "images": [
+            {
+              "src": "images/week-7/IMG_2938.jpg",
+              "alt": "Bustling Marseille street packed with crowds, ornate buildings and a palace visible at the far end"
+            }
+          ]
+        },
+        {
+          "text": "Something I was not expecting was the amount of fast fashion and budget stores present. Not all of them were large names or even official stores; many stores boasted cheap items on outdoor racks. The closest experiences I have felt to the shopping experience were the streets near Fordham in the Bronx, where outdoor sellers sell alongside established storefronts. A similar comparison would be clothing booths at Saturday markets or along the street that sell I Heart NY shirts and cheap knockoff Yankees hats.",
+          "images": [
+            {
+              "src": "images/week-7/IMG_2937.jpg",
+              "alt": "Kilo Shop storefront with clothing piled on outdoor racks and a Prix au Poids sign"
+            },
+            {
+              "src": "images/week-7/IMG_2984.jpg",
+              "alt": "Outdoor clothing rack on a Marseille street with budget items for sale"
+            },
+            {
+              "src": "images/week-7/IMG_3031.jpg",
+              "alt": "Inside a cluttered budget clothing store packed with shirts, shoes, and accessories"
+            },
+            {
+              "src": "images/week-7/IMG_3036.jpg",
+              "alt": "Vintage shop interior with jackets on a rack alongside antique frames and décor"
+            }
+          ]
+        },
+        {
+          "text": "One store on this street, however, which has been a recurring theme among my blog posts, stopped me in my tracks. It was the most elegant Uniqlo that I have ever seen. Beautiful stonework on the outside, and ornate railings in the interior, this Uniqlo was something special. Clearly, they had repurposed some old piece of architecture and turned it into the most classy Uniqlo I have ever seen. The clothing arrangement was largely consistent with other Uniqlo stores around the world, with many items folded and heavily layered mannequins. Only the most expensive items were hung, and many items were so small that they were in boxes and could not be tried on. I was amazed by this Uniqlo, especially considering that its surroundings were not particularly nice to look at, nor expensive. Uniqlo in Marseille is truly a classy one; they continued with their discreet signage, but the store opened up into a very ornate shopping experience.",
+          "images": [
+            {
+              "src": "images/week-7/IMG_2940.jpg",
+              "alt": "Uniqlo exterior in Marseille housed in a grand stone building with ornate carvings"
+            },
+            {
+              "src": "images/week-7/IMG_2941.jpg",
+              "alt": "Inside the Marseille Uniqlo showing ornate railings, high ceilings, and elegant architectural details"
+            },
+            {
+              "src": "images/week-7/IMG_2943.jpg",
+              "alt": "Uniqlo interior with layered mannequins and folded items on shelves"
+            }
+          ]
+        }
+      ]
     },
     {
       "weekNumber": 8,
