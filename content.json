@@ -546,13 +546,79 @@
     {
       "weekNumber": 8,
       "slug": "week-8",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 8",
-      "title": "Week 8",
+      "title": "Barcelona",
       "dateDisplay": "",
-      "essay": null,
-      "featuredImage": null,
-      "images": []
+      "featuredImage": {
+        "src": "images/week-8/IMG_3444.jpg",
+        "alt": "Uniqlo mannequin with layered clothing beneath an ornate chandelier in Barcelona"
+      },
+      "sections": [
+        {
+          "text": "Upon arrival in Barcelona, my first impression of the fashion scene was that it prioritized comfort, especially during the hot weather. While many people did not wear jackets, when they did, I saw lots of leather and soccer (football) related themes. The outer garments ranged from something easy to carry in hand to something thin, meant to break wind. I did not sense an overly formal fashion scene; most people preferred a casual style, wearing t-shirts, blue jeans, and sweaters. The two main focal points during my trip were the charity/budget shops, Uniqlo, and Zara as an honorable mention.",
+          "images": [
+            {
+              "src": "images/week-8/IMG_3409.jpg",
+              "alt": "Leather jacket shop window display in Barcelona"
+            },
+            {
+              "src": "images/week-8/IMG_3383.jpg",
+              "alt": "Barcelona football memorabilia store with FC Barcelona shirts, hats, and souvenirs"
+            }
+          ]
+        },
+        {
+          "text": "Barcelona had the most interesting charity shop networks that I have seen on my travels thus far. By far, Barcelona had the lowest prices, while not sacrificing brand names/reputable pieces. The only comparable location I have been to that rivals Barcelona is Berlin; however, while they are similar, they are also vastly different. Berlin boasted an amazing network of thrift/charity shops; however, the prices were high, and while the pieces were very cool and dark, Barcelona's network showcased a wide array of different options for incredibly low prices. We explored one store that sold most of its items for as low as 1 euro. This is incredibly cheap, and the clothes were surprisingly of very good quality. While there was little curation in Barcelona, I was able to find brands that I knew. While they were not necessarily high-end brands, the shopping experience was still very fun. I ended up purchasing a sweater that is a brand I recognize for 1 euro, and it looks very nice. While Barcelona's thrift culture was vastly less curated than Berlin's and London's, it made up for this with its incredibly low prices and amazing variety of items.",
+          "images": [
+            {
+              "src": "images/week-8/IMG_3329.jpg",
+              "alt": "Charity shop with All Clothes 1 euro signs and racks of jackets"
+            },
+            {
+              "src": "images/week-8/IMG_3330.jpg",
+              "alt": "Inside the 1 euro charity store with packed clothing racks"
+            },
+            {
+              "src": "images/week-8/IMG_3269.jpg",
+              "alt": "Outdoor charity shop with clothing and accessories displayed on the street"
+            }
+          ]
+        },
+        {
+          "text": "In addition to charity shops, I also went to a large shopping district in Barcelona where there were massive retail stores. I saw the world's largest Zara, and the building was genuinely huge. I visited lots of soccer (football) memorabilia stores, and of course, I had to see Uniqlo in Barcelona. Similar to the store in Mariselle, Barcelona's Uniqlo was within a massive historical building. It took up 4 floors and was very ornate inside. The arrangement of the clothing was very similar to other stores internationally; however, the surroundings were much nicer, similar to the store in Mariselle. Compared to London and American Uniqlo, the Barcelona Uniqlo was very fancy and created a very nice environment. There was even a chandelier, something I haven't seen at any Uniqlo before. Something that remained the same was the style of the mannequins' clothing. Many of them had 3-5 layers on, and, interestingly, many were wearing hats or sunglasses, clearly a small nod to the strong sun nearby.",
+          "images": [
+            {
+              "src": "images/week-8/IMG_3441.jpg",
+              "alt": "The massive Zara building exterior in Barcelona's shopping district"
+            },
+            {
+              "src": "images/week-8/IMG_3424.jpg",
+              "alt": "Dramatic store interior with colorful columns and mannequin display"
+            },
+            {
+              "src": "images/week-8/IMG_3431.jpg",
+              "alt": "FC Barcelona jerseys including Lewandowski and Lamine Yamal on display"
+            },
+            {
+              "src": "images/week-8/IMG_3444.jpg",
+              "alt": "Uniqlo mannequin with layered outfit beneath an ornate chandelier"
+            },
+            {
+              "src": "images/week-8/IMG_3443.jpg",
+              "alt": "Inside Barcelona Uniqlo showing ornate ceiling, hung items, and boxed accessories"
+            },
+            {
+              "src": "images/week-8/IMG_3442.jpg",
+              "alt": "Uniqlo interior with folded clothing displays and mannequins in a historic building"
+            }
+          ]
+        },
+        {
+          "text": "I enjoyed the Barcelona shopping experience. It definitely was a less formal, more fast/affordable fashion experience, as I witnessed; however, there were many great deals and amazing items to be found.",
+          "images": []
+        }
+      ]
     },
     {
       "weekNumber": 9,
