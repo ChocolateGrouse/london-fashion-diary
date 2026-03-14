@@ -358,12 +358,63 @@
     {
       "weekNumber": 5,
       "slug": "week-5",
-      "status": "draft",
+      "status": "published",
       "stopName": "Stop 5",
-      "title": "Week 5",
+      "title": "Amsterdam",
       "dateDisplay": "",
-      "essay": null,
-      "featuredImage": null,
+      "featuredImage": {
+        "src": "images/week-5/IMG_2828.jpg",
+        "alt": "Rag & Bone window display in Amsterdam"
+      },
+      "sections": [
+        {
+          "text": "I traveled to Amsterdam and, while there, took careful note of the various styles of people around me and the shopping atmosphere. What I initially noticed was the strong bike culture. Nearly all the locals biked from point A to B; as a result, many of the outfits aligned with this practice. Most of the pants worn were slim/skinny, and few people wore long overcoats. Many of the women wore pants rather than flowy skirts/dresses; the fashion culture clearly prioritized wearability and movement over curated, \u201clarge\u201d looks.",
+          "images": [
+            {
+              "src": "images/week-5/IMG_2790.jpg",
+              "alt": "Rows of bicycles lining an Amsterdam street at night"
+            },
+            {
+              "src": "images/week-5/IMG_2821.jpg",
+              "alt": "Uniqlo store entrance in Amsterdam"
+            },
+            {
+              "src": "images/week-5/IMG_2822.jpg",
+              "alt": "Uniqlo window display with casual denim looks"
+            }
+          ]
+        },
+        {
+          "text": "The local fashion scene seemed dressed down compared to the culture in London, such as the performative fashion at Harrods. With that said, quality should not always align with this performative nature; rather, the opposite is often true. I imagine Dutch culture prioritizes high-quality, long-lasting clothing items that can withstand the test of time. While their clothes are significantly less for show, they are still designed to last and often look high-quality.",
+          "images": []
+        },
+        {
+          "heading": "Rag & Bone",
+          "text": "The store I interacted with most was a Rag & Bone store. Rag & Bone, a New York brand, had quite an extensive store, with bold, Amsterdam-themed window displays. The mannequins were understated, yet fashionable. The clothes inside emphasise quality and function first, fashion second. Rag and Bone is famous for its alternative-material jeans; these were a major selling point at their Amsterdam location. They were clearly marketing their comfort and function-first garments, showcasing how a customer can still look fashionable without sacrificing movement and comfort.",
+          "images": [
+            {
+              "src": "images/week-5/IMG_2828.jpg",
+              "alt": "Rag & Bone window display with mannequins in understated looks"
+            },
+            {
+              "src": "images/week-5/IMG_2827.jpg",
+              "alt": "Rag & Bone store interior with New York branding"
+            },
+            {
+              "src": "images/week-5/IMG_2829.jpg",
+              "alt": "Rag & Bone alternative-material jeans on display"
+            },
+            {
+              "src": "images/week-5/IMG_2830.jpg",
+              "alt": "Rag & Bone jeans collection and sneakers display"
+            }
+          ]
+        },
+        {
+          "text": "Exploring Amsterdam\u2019s fashion scene allowed me to appreciate the function-first clothing industry. I am not a large fan of visible labels, and I love it when clothes last even in the most extreme environments. I will take inspiration from the culture in Amsterdam to ensure that I don\u2019t sacrifice too much bodily function/comfort for fashion.",
+          "images": []
+        }
+      ],
       "images": []
     },
     {
